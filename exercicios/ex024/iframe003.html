@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        iframe > img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex minima, ipsum doloremque obcaecati quo. Nobis veritatis, sint quas totam vel earum reprehenderit assumenda ea vero doloremque dolore nesciunt hic?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum similique doloremque obcaecati aspernatur culpa. Accusantium voluptas fuga unde quo est assumenda, explicabo quis mollitia distinctio quasi odit tempora nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim illo, quibusdam numquam ducimus quis asperiores. Omnis dicta at, velit ut laborum esse, quisquam eos ducimus nulla delectus, laboriosam magnam.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim illo, quibusdam numquam ducimus quis asperiores. Omnis dicta at, velit ut laborum esse, quisquam eos ducimus nulla delectus, laboriosam magnam.</p><img src='imagens/mascote.png'> " id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reiciendis saepe illum quo placeat error tempora facere. Odio vero unde eveniet maxime, vel, iste ratione temporibus consectetur, facere quasi nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima suscipit quia non fuga quos omnis dicta quis recusandae voluptatem labore maxime, molestiae voluptas ducimus voluptate ipsum necessitatibus commodi atque quae!</p>
+</body>
+</html>
