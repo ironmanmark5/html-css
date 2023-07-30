@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Pride Tech</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mais Notícias</a></li>
+                <li><a href="#">Recomendações</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Quiz</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Oracle vence Google em disputa que <br>
+                envolve direitos autorais do Java</h2>
+
+            <p>Em 2016, o Google venceu a Oracle e com isso não precisou pagar uma multa bilionária de uso do Java no Android. A Oracle, porém, não desistiu do caso e recorreu mais uma vez em busca de proteger os seus direitos autorais sobre o Java.</p>
+
+            <p>Passados dois anos, a Corte Federal de Apelações dos Estados Unidos acabou julgando o recurso da Oracle e deu ganho de causa para a empresa. Deste modo, o Google terá que desembolsar uma multa de cerca de US$ 9 bilhões por ter utilizado o Java sem o devido pagamento de royalties no Android.</p>
+            
+            <abbr title="Oracle vence Google em disputa que envolve direitos autorias do Java">
+                <picture>
+                    <img src="imagens/google-oracle.jpg" alt="Sede das empresas Oracle e Google lado a lado">
+                </picture>
+            </abbr>
+
+            <p>O cálculo em valores atuais será feito pelo tribunal da Califórnia, desta forma, o valor mencionado acima poderá sofrer alterações.</p>
+
+            <p>"A opinião do Circuito Federal defende os princípios fundamentais da lei de direitos autorais e deixa claro que o Google a violou. Esta decisão protege os criadores e consumidores do abuso ilegítimo dos seus direitos", disse o vice-presidente da Oracle após a decisão da corte.</p>
+
+            <p>O Google, no entanto, não se manifestou sobre as decisões que irá tomar em relação a decisão judicial, porém, mostrou-se preocupado.</p>
+
+            <p>"Esse tipo de decisão fará os aplicativos e os serviços online mais caros para os usuários", disse um porta-voz do Google.</p>
+
+            <p>A decisão, segundo o The Wall Street Journal, irá impactar no mercado de tecnologia. Isso tudo porque pequenas startups podem ser processadas pelo uso não autorizado de APIs.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
