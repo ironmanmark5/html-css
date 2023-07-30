@@ -72,7 +72,7 @@ picture {
 }
 
 picture > img {
-    max-width: 420px;
+    max-width: 320px;
     display: block;
     margin: auto;
     border-radius: 10px;
