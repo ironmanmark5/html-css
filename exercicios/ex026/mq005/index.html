@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Pride Tech</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
@@ -31,7 +32,8 @@
             
             <abbr title="Oracle vence Google em disputa que envolve direitos autorias do Java">
                 <picture>
-                    <img src="imagens/google-oracle.jpg" alt="Sede das empresas Oracle e Google lado a lado">
+                    <source media="(min-width: 812px)" srcset="imagens/pc-google-oracle.jpg">
+                    <img src="imagens/phone-google-oracle.jpg" alt="Sede das empresas Oracle e Google lado a lado">
                 </picture>
             </abbr>
 
@@ -46,7 +48,19 @@
             <p>A decisão, segundo o The Wall Street Journal, irá impactar no mercado de tecnologia. Isso tudo porque pequenas startups podem ser processadas pelo uso não autorizado de APIs.</p>
         </article>
     </main>
+    <footer>
+        <p>Todos os créditos do artigo a <span id="destaque">Rafaela Pozzebom</span> e ao site <a href="https://www.oficinadanet.com.br/google/22300-oracle-vence-google-em-disputa-que-envolve-direitos-autorais-do-java" target="_blank" rel="author">Oficina da net</a></p>
+    </footer>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 812) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

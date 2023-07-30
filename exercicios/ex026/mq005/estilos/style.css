@@ -18,6 +18,8 @@ header {
 header > h1 {
     padding: 10px;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
 }
 
 span#burguer {
@@ -50,12 +52,13 @@ menu > ul > li > a {
     text-align: center;
     text-decoration: none;
     background-color: rgb(87, 87, 87);
-    color: white;
+    color: rgb(221, 221, 221);
     border-top: 2px solid gray;
 }
 
 menu > ul > li > a:hover {
     background-color: gray;
+    color: white;
 }
 
 main {
@@ -63,6 +66,7 @@ main {
     background-color: white;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -72,7 +76,6 @@ picture {
 }
 
 picture > img {
-    max-width: 320px;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -93,4 +96,33 @@ article > p {
 article > p::selection {
     color: #0a4366;
     background-color: #fca934;
+}
+
+footer {
+    display: block;
+    margin: 0px;
+    margin-bottom: -50px;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    color: whitesmoke;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    padding: 5px;
+}
+
+footer > p > span#destaque {
+    color: rgb(136, 136, 136);
+    font-weight: bold;
 }
